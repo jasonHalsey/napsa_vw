@@ -1,0 +1,7 @@
+.row {
+  @include grid-container;
+  @include clearfix;
+}
+.col-3{
+  @include grid-column(3);
+}
