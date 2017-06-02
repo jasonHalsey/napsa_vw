@@ -1,10 +1,9 @@
 /*
-Theme Name: napsa_vw
+Theme Name: NAPSA - VW
 Theme URI: httpp://halsey-design.com
-Description: Child theme for twentyfifteen
+Description: Theme for NAPSA Virtual Workshop 2017
 Author: Halsey Design, LLC.
 Author URI: http://www.halsey-design.com
-Template: twentyfifteen
 Version: 1.0.0
 */
 button, [type='button'], [type='reset'], [type='submit'] {
@@ -248,87 +247,126 @@ hr {
   margin: 1.5em 0;
 }
 
-#site-navigation {
-  display: block;
-  background: #000;
-  height: 50px;
+header {
+  border-top: 5px solid #e76735;
+  border-bottom: 5px solid #e76735;
 }
 
-#site-navigation #top-menu,
-#site-navigation > input {
-  display: none;
-}
-
-#site-navigation > label {
-  display: block;
-  font-size: 36px;
+footer {
+  width: 100%;
   color: #fff;
-  position: absolute;
-  right: 20px;
-  width: 36px;
-  padding: 0;
-  cursor: pointer;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  background-color: #818c3c;
+  border-top: 5px solid #e76735;
 }
-
-#site-navigation > input:checked + #top-menu {
-  display: block;
-  clear: both;
-  top: 36px;
-  position: relative;
-  background: #000;
-  color: #fff;
+footer hr {
+  margin: 0 0 0 0;
 }
-
-#site-navigation ul li {
-  display: block;
-  padding: 12px 10px;
+footer .footer_contain {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.8em 0;
 }
-
-#site-navigation a {
-  text-decoration: none;
-  color: #fff;
-}
-
-@media only screen and (min-device-width: 768px) {
-  #site-navigation {
-    height: auto;
-  }
-
-  #site-navigation #top-menu {
-    display: block;
-  }
-
-  #site-navigation > label {
-    display: none;
-  }
-
-  #site-navigation ul li {
-    display: inline-block;
-  }
-}
-.row::after {
+footer .footer_contain::after {
   clear: both;
   content: "";
   display: block;
 }
-.row::after {
+footer .footer_contain .footer_logo {
+  width: calc(25% - 25px);
+  float: left;
+  margin-left: 20px;
+}
+footer .footer_contain .footer_about {
+  width: calc(50% - 30px);
+  float: left;
+  margin-left: 20px;
+}
+footer .footer_contain .footer_facebook {
+  width: calc(25% - 25px);
+  float: left;
+  margin-left: 20px;
+}
+footer .copyright {
+  text-align: center;
+  padding: 1.0em 0;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+#primary {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: block;
+}
+#primary::after {
   clear: both;
   content: "";
   display: block;
 }
 
-.col-3 {
+.header_video {
+  width: calc(100% - 40px);
+  float: left;
+  margin-left: 20px;
+}
+
+.site-main {
+  width: calc(75% - 35px);
+  float: left;
+  margin-left: 20px;
+}
+
+#sidebar_nap {
   width: calc(25% - 25px);
   float: left;
   margin-left: 20px;
 }
 
-body {
-  background-color: #ffba00;
+h1 {
+  font-family: "myriad-pro", sans-serif;
+  font-size: 2.2em;
+  font-weight: 600;
+  color: #e76735;
+}
+
+h2 {
+  font-family: "myriad-pro", sans-serif;
+  font-size: 1.9em;
+  font-weight: 700;
+  color: #e76735;
+}
+
+a {
+  text-decoration: none;
+}
+
+.videofeed::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+.videofeed a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.videofeed .img_hold {
+  width: calc(25% - 25px);
+  float: left;
+  margin-left: 20px;
+  margin-left: 0;
+  margin-right: 20px;
+}
+.videofeed .img_hold img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.videofeed .div_info {
+  width: calc(75% - 35px);
+  float: left;
+  margin-left: 20px;
 }

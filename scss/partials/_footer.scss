@@ -1,0 +1,28 @@
+footer{
+	width:100%;
+	color:#fff;
+	background-color:$dk_green;
+	border-top:5px solid $orange;
+	hr{
+		margin:0 0 0 0;
+	}
+	.footer_contain{
+		 @include grid-container;
+		 max-width: 1200px;
+		 margin:0 auto;
+		 padding: 1.8em 0;
+		 .footer_logo{
+		 	@include grid-column(3);
+		 }
+		 .footer_about{
+		 	@include grid-column(6);
+		 }
+		 .footer_facebook{
+		 	@include grid-column(3);
+		 }
+	}
+	.copyright{
+		text-align: center;
+		padding:1.0em 0;
+	}
+}

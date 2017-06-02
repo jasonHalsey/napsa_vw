@@ -1,13 +1,29 @@
-.row {
-  @include grid-container;
-  @include clearfix;
-}
-.col-3{
-  @include grid-column(3);
-}
-
-
-
 body{
-	background-color: #ffba00;
+	background-color: $white;
+}
+
+$custom-neat-grid: (
+  columns: 12,
+  gutter: 50px,
+  media: 1000px,
+);
+
+
+#primary{
+	width:100%;
+	max-width: 1200px;
+	margin:0 auto;
+	display:block;
+	@include clearfix;
+}
+.header_video{
+	@include grid-column(12);
+}
+.site-main{
+  @include grid-column(9);
+
+}
+#sidebar_nap{
+  @include grid-column(3);
+
 }
