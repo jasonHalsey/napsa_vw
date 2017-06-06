@@ -426,16 +426,31 @@ ul.theme_links a:hover {
   height: 100%;
   display: block;
 }
+.videofeed a:hover .img_hold .play_arrow {
+  opacity: 1;
+}
 .videofeed .img_hold {
   width: calc(25% - 25px);
   float: left;
   margin-left: 20px;
   margin-left: 0;
+  position: relative;
 }
-.videofeed .img_hold img {
+.videofeed .img_hold img.placeholder {
   display: block;
   width: 100%;
   height: auto;
+  position: relative;
+}
+.videofeed .img_hold .play_arrow {
+  position: absolute;
+  width: 30%;
+  height: auto;
+  z-index: 99;
+  opacity: 0.7;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .videofeed .vid_info {
   width: calc(75% - 35px);
@@ -481,6 +496,12 @@ ul.theme_links a:hover {
 }
 #sidebar_nap p {
   font-size: 16px;
+}
+#sidebar_nap ul {
+  margin-bottom: 1.5em;
+}
+#sidebar_nap ul li {
+  margin-bottom: 0.75em;
 }
 
 #monkey_icon {

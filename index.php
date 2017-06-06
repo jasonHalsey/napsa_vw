@@ -48,7 +48,10 @@ Template Name: Index
 				?>
 				<?php while ( $loop->have_posts() ) : $loop->the_post();?>
 					<a class="post_block" href="<?php the_permalink(); ?>">
-						<div class="img_hold"><img src="<?php echo get_post_meta( $post->ID, '_cmb2_placholder_image', true ); ?>" /></div>
+						<div class="img_hold">
+							<div class="play_arrow"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/play_arrow.svg"></div>
+							<img src="<?php echo get_post_meta( $post->ID, '_cmb2_placholder_image', true ); ?>" class="placeholder" />
+						</div>
 						<div class="vid_info">
 							<h2><?php the_title() ?></h2>
 							<p><?php echo wpautop(get_post_meta( $post->ID, '_cmb2_short_description', true )); ?></p>
@@ -75,7 +78,10 @@ Template Name: Index
 				?>
 				<?php while ( $loop->have_posts() ) : $loop->the_post();?>
 					<a class="post_block" href="<?php the_permalink(); ?>">
-						<div class="img_hold"><img src="<?php echo get_post_meta( $post->ID, '_cmb2_placholder_image', true ); ?>" /></div>
+						<div class="img_hold">
+							<div class="play_arrow"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/play_arrow.svg"></div>
+							<img src="<?php echo get_post_meta( $post->ID, '_cmb2_placholder_image', true ); ?>" class="placeholder" />
+						</div>
 						<div class="vid_info">
 							<h2><?php the_title() ?></h2>
 							<p><?php echo wpautop(get_post_meta( $post->ID, '_cmb2_short_description', true )); ?></p>
@@ -103,7 +109,10 @@ Template Name: Index
 				?>
 				<?php while ( $loop->have_posts() ) : $loop->the_post();?>
 					<a class="post_block" href="<?php the_permalink(); ?>">
-						<div class="img_hold"><img src="<?php echo get_post_meta( $post->ID, '_cmb2_placholder_image', true ); ?>" /></div>
+						<div class="img_hold">
+							<div class="play_arrow"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/play_arrow.svg"></div>
+							<img src="<?php echo get_post_meta( $post->ID, '_cmb2_placholder_image', true ); ?>" class="placeholder" />
+						</div>
 						<div class="vid_info">
 							<h2><?php the_title() ?></h2>
 							<p><?php echo wpautop(get_post_meta( $post->ID, '_cmb2_short_description', true )); ?></p>
@@ -130,7 +139,10 @@ Template Name: Index
 				?>
 				<?php while ( $loop->have_posts() ) : $loop->the_post();?>
 					<a class="post_block" href="<?php the_permalink(); ?>">
-						<div class="img_hold"><img src="<?php echo get_post_meta( $post->ID, '_cmb2_placholder_image', true ); ?>" /></div>
+						<div class="img_hold">
+							<div class="play_arrow"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/play_arrow.svg"></div>
+							<img src="<?php echo get_post_meta( $post->ID, '_cmb2_placholder_image', true ); ?>" class="placeholder" />
+						</div>
 						<div class="vid_info">
 							<h2><?php the_title() ?></h2>
 							<p><?php echo wpautop(get_post_meta( $post->ID, '_cmb2_short_description', true )); ?></p>
@@ -157,7 +169,10 @@ Template Name: Index
 				?>
 				<?php while ( $loop->have_posts() ) : $loop->the_post();?>
 					<a class="post_block" href="<?php the_permalink(); ?>">
-						<div class="img_hold"><img src="<?php echo get_post_meta( $post->ID, '_cmb2_placholder_image', true ); ?>" /></div>
+						<div class="img_hold">
+							<div class="play_arrow"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/play_arrow.svg"></div>
+							<img src="<?php echo get_post_meta( $post->ID, '_cmb2_placholder_image', true ); ?>" class="placeholder" />
+						</div>
 						<div class="vid_info">
 							<h2><?php the_title() ?></h2>
 							<p><?php echo wpautop(get_post_meta( $post->ID, '_cmb2_short_description', true )); ?></p>
@@ -184,7 +199,10 @@ Template Name: Index
 				?>
 				<?php while ( $loop->have_posts() ) : $loop->the_post();?>
 					<a class="post_block" href="<?php the_permalink(); ?>">
-						<div class="img_hold"><img src="<?php echo get_post_meta( $post->ID, '_cmb2_placholder_image', true ); ?>" /></div>
+						<div class="img_hold">
+							<div class="play_arrow"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/play_arrow.svg"></div>
+							<img src="<?php echo get_post_meta( $post->ID, '_cmb2_placholder_image', true ); ?>" />
+						</div>
 						<div class="vid_info">
 							<h2><?php the_title() ?></h2>
 							<p><?php echo wpautop(get_post_meta( $post->ID, '_cmb2_short_description', true )); ?></p>
@@ -211,7 +229,10 @@ Template Name: Index
 				?>
 				<?php while ( $loop->have_posts() ) : $loop->the_post();?>
 					<a class="post_block" href="<?php the_permalink(); ?>">
-						<div class="img_hold"><img src="<?php echo get_post_meta( $post->ID, '_cmb2_placholder_image', true ); ?>" /></div>
+						<div class="img_hold">
+							<div class="play_arrow"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/play_arrow.svg"></div>
+							<img src="<?php echo get_post_meta( $post->ID, '_cmb2_placholder_image', true ); ?>" class="placeholder" />
+						</div>
 						<div class="vid_info">
 							<h2><?php the_title() ?></h2>
 							<p><?php echo wpautop(get_post_meta( $post->ID, '_cmb2_short_description', true )); ?></p>
