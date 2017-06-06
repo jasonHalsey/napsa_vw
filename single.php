@@ -12,12 +12,14 @@ Template Name: single_video
   ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-			<?php the_title(); ?>
+			<a class="return_home" href="<?php echo home_url(); ?>">Return to Home</a>
+			<h2><?php the_title(); ?></h2>
+			<h4>Contributor: <?php echo get_post_meta( $post->ID, '_cmb2_organization', true ); ?></h4>
 			<?php echo wpautop(get_post_meta( $post->ID, '_cmb2_video_url', true )); ?>
 			<?php echo wpautop(get_post_meta( $post->ID, '_cmb2_short_description', true )); ?>
 			<?php echo do_shortcode(" $chat_code "); ?>
 			
-			<?php echo wpautop(get_post_meta( $post->ID, '_cmb2_organization', true )); ?>
+			
 
 		</main><!-- .site-main -->
 	</div><!-- .content-area -->

@@ -1,4 +1,18 @@
+#head_contain{
+	max-width: 1200px;
+	display: block;
+	margin: 0 auto;
+	@include clearfix;
+	padding:1.0em 0 .05em;
+}
 header{
   border-top:5px solid $orange;
   border-bottom:5px solid $orange;
+}
+.logo_header{
+	float:left;
+}
+.banner_header{
+	float:right;
+	margin-top:1.5em;
 }

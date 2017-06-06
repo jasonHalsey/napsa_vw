@@ -1,10 +1,14 @@
 footer{
 	width:100%;
 	color:#fff;
+	font-size: 0.90em;
 	background-color:$dk_green;
 	border-top:5px solid $orange;
 	hr{
 		margin:0 0 0 0;
+	}
+	#footer_logo{
+		margin-left: -1.0em;
 	}
 	.footer_contain{
 		 @include grid-container;
@@ -13,12 +17,16 @@ footer{
 		 padding: 1.8em 0;
 		 .footer_logo{
 		 	@include grid-column(3);
+		 	p{
+		 		margin: 0 0 .35em 0;
+		 	}
 		 }
 		 .footer_about{
 		 	@include grid-column(6);
 		 }
 		 .footer_facebook{
 		 	@include grid-column(3);
+		 	color: #000;
 		 }
 	}
 	.copyright{

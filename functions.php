@@ -22,7 +22,7 @@
 function my_custom_sidebar() {
     register_sidebar(
         array (
-            'name' => __( 'Custom', 'your-theme-domain' ),
+            'name' => __( 'SideBar', 'your-theme-domain' ),
             'id' => 'custom-side-bar',
             'description' => __( 'Custom Sidebar', 'your-theme-domain' ),
             'before_widget' => '<div class="widget-content">',

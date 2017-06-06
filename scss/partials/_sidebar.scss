@@ -1,0 +1,29 @@
+#sidebar_nap{
+	font-size: 16px;
+	h3.widget-title{
+		color:$orange;
+		font-family: $headerFont;
+		text-transform: uppercase;
+		font-size: 1.3em;
+		font-weight: 700;
+		margin: 0 0 0.25em 0;
+	}
+	.widget-content:not(:first-child){
+		h3.widget-title{
+			font-size: 18px;
+		}
+	}
+	.widget-content{
+		margin-bottom: 1.5em;
+	}
+	p{
+		font-size: 16px;
+	}
+
+}
+
+#monkey_icon{
+	float:left;
+	margin-right: 0.5em;
+	margin-bottom: 0.5em;
+}

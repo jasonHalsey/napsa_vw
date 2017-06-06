@@ -1,5 +1,7 @@
 body{
 	background-color: $white;
+	font-size: 18px;
+	color:#000;
 }
 
 $custom-neat-grid: (
@@ -12,18 +14,27 @@ $custom-neat-grid: (
 #primary{
 	width:100%;
 	max-width: 1200px;
-	margin:0 auto;
+	margin:0 auto 2.0em;
 	display:block;
 	@include clearfix;
 }
-.header_video{
-	@include grid-column(12);
-}
-.site-main{
-  @include grid-column(9);
+body.home{
+	#header_video{
+		@include grid-column(12);
+		margin-bottom: 2.0em;
+	}
+	.site-main{
+	  @include grid-column(9);
 
-}
-#sidebar_nap{
-  @include grid-column(3);
 
+	}
+	#sidebar_nap{
+	  @include grid-column(3);
+
+	}
+}
+body.single{
+	.site-main{
+	  @include grid-container();
+	 }
 }
