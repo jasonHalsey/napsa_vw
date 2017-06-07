@@ -304,6 +304,12 @@ footer .footer_contain .footer_logo {
 footer .footer_contain .footer_logo p {
   margin: 0 0 .35em 0;
 }
+footer .footer_contain .footer_logo a {
+  color: #fff;
+}
+footer .footer_contain .footer_logo a:hover {
+  color: #e76735;
+}
 footer .footer_contain .footer_about {
   width: calc(50% - 30px);
   float: left;
@@ -339,10 +345,15 @@ body {
 }
 
 body.home #header_video {
-  width: calc(100% - 40px);
-  float: left;
-  margin-left: 20px;
-  margin-bottom: 2.0em;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 2.0em;
+  display: block;
+}
+body.home #header_video::after {
+  clear: both;
+  content: "";
+  display: block;
 }
 body.home .site-main {
   width: calc(75% - 35px);
@@ -527,4 +538,97 @@ body.single a.return_home {
 }
 body.single a.return_home:hover {
   color: #e76735;
+}
+
+.videoWrapper {
+  position: relative;
+  width: 100%;
+  height: 0;
+  background-color: #fff;
+}
+.videoWrapper43 {
+  padding-top: 75%;
+}
+.videoWrapper169 {
+  padding-top: 56%;
+}
+
+.videoIframe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+
+.videoPoster {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  border: 0;
+  outline: none;
+  background-position: 50% 50%;
+  background-size: 100% 100%;
+  background-size: cover;
+  overflow: hidden;
+  opacity: 1;
+  -webkit-transition: opacity 800ms, height 0s;
+  -moz-transition: opacity 800ms, height 0s;
+  transition: opacity 800ms, height 0s;
+  -webkit-transition-delay: 0s, 0s;
+  -moz-transition-delay: 0s, 0s;
+  transition-delay: 0s, 0s;
+}
+.videoPoster:before {
+  content: url(images/video_play.png);
+  position: absolute;
+  display: block;
+  z-index: 99999;
+  top: 50%;
+  left: 50%;
+  width: 136px;
+  height: 94px;
+  margin: -68px 0 0 -68px;
+}
+.videoPoster:after {
+  content: 'WELCOME';
+  position: absolute;
+  top: 63%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  text-shadow: 2px 2px 2px black;
+  font-size: 85pt;
+  font-weight: 700;
+  width: 100%;
+  color: #fff;
+  display: block;
+  z-index: 99999;
+}
+@media only screen and (max-width: 800px) {
+  .videoPoster:after {
+    display: none;
+  }
+}
+.videoPoster:hover:before, .videoPoster:focus:before {
+  border-color: #fff;
+}
+.videoPoster:hover:after, .videoPoster:focus:after {
+  border-left-color: #fff;
+}
+.videoWrapperActive .videoPoster {
+  opacity: 0;
+  height: 0;
+  -webkit-transition-delay: 0s, 800ms;
+  -moz-transition-delay: 0s, 800ms;
+  transition-delay: 0s, 800ms;
 }

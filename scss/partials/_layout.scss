@@ -20,8 +20,11 @@ $custom-neat-grid: (
 }
 body.home{
 	#header_video{
-		@include grid-column(12);
-		margin-bottom: 2.0em;
+		width:100%;
+	max-width: 1200px;
+	margin:0 auto 2.0em;
+	display:block;
+	@include clearfix;
 	}
 	.site-main{
 	  @include grid-column(9);

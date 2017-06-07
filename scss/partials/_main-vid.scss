@@ -1,0 +1,95 @@
+$color-button:       #fff;
+$color-button-hover: #fff;
+
+.videoWrapper {
+  position: relative;
+  width: 100%;
+  height: 0;
+  background-color: #fff;
+  &43 {
+    padding-top: 75%;
+  } 
+  &169 {
+    padding-top: 56%;
+  } 
+}
+.videoIframe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+.videoPoster {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  border: 0;
+  outline: none;
+  background-position: 50% 50%;
+  background-size: 100% 100%;
+  background-size: cover;
+  overflow: hidden;
+  opacity: 1;
+  -webkit-transition: opacity 800ms, height 0s;
+  -moz-transition: opacity 800ms, height 0s;
+  transition: opacity 800ms, height 0s;
+  -webkit-transition-delay: 0s, 0s;
+  -moz-transition-delay: 0s, 0s;
+  transition-delay: 0s, 0s;
+  &:before {
+    content: url(images/video_play.png);
+    position: absolute;
+    display:block;
+    z-index:99999;
+    top: 50%;
+    left: 50%;
+    width: 136px;
+    height: 94px;
+    margin: -68px 0 0 -68px;
+  }
+  &:after {
+    content: 'WELCOME';
+    position: absolute;
+    top: 63%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+    font-size: 85pt;
+    font-weight: 700;
+    width: 100%;
+    color:#fff;
+    display: block;
+    z-index:99999;
+    @media only screen and (max-width: 800px) {
+      display:none;
+    }
+  }
+  &:hover,
+  &:focus {
+    &:before {
+      border-color: $color-button-hover;
+    }
+    &:after {
+      border-left-color: $color-button-hover;
+    }
+  }
+  .videoWrapperActive & {
+    opacity: 0;
+    height: 0;
+    -webkit-transition-delay: 0s, 800ms;
+    -moz-transition-delay: 0s, 800ms;
+    transition-delay: 0s, 800ms;
+  }
+}
+
