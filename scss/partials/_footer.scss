@@ -9,6 +9,9 @@ footer{
 	}
 	#footer_logo{
 		margin-left: -1.0em;
+		@media only screen and (max-width: 700px) {
+			margin: 0 auto;
+		}
 	}
 	.footer_contain{
 		 @include grid-container;
@@ -26,17 +29,35 @@ footer{
 		 			color:$orange;
 		 		}
 		 	}
+		 	@media only screen and (max-width: 700px) {
+				@include grid-column(12);
+				padding:1.0em;
+				margin-bottom: 1.0em;
+				border-bottom: 1px solid #fff;
+				text-align: center;
+			}
 		 }
 		 .footer_about{
 		 	@include grid-column(6);
+		 	@media only screen and (max-width: 700px) {
+				@include grid-column(12);
+				padding:1.0em;
+				margin-bottom: 1.0em;
+				border-bottom: 1px solid #fff;
+				text-align: center;
+			}
 		 }
 		 .footer_facebook{
 		 	@include grid-column(3);
+		 	@media only screen and (max-width: 700px) {
+				@include grid-column(12);
+			}		 	
 		 	color: #000;
+		 	font-size: 12px;
 		 }
 	}
 	.copyright{
 		text-align: center;
-		padding:1.0em 0;
+		padding:1.0em;
 	}
 }

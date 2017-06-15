@@ -57,10 +57,23 @@ $color-button-hover: #fff;
     height: 94px;
     margin: -68px 0 0 -68px;
   }
+  @media only screen and (max-width: 800px) {
+       &:before {
+        content: url(images/video_play_sm.png);
+        position: absolute;
+        display:block;
+        z-index:99999;
+        top: 50%;
+        left: 50%;
+        width: 68px;
+        height: 47px;
+        margin: -34px 0 0 -34px;
+      }
+    }
   &:after {
     content: 'WELCOME';
     position: absolute;
-    top: 63%;
+    top: 72%;
     left: 0;
     right: 0;
     text-align: center;

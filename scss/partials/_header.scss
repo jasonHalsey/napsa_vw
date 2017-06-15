@@ -4,6 +4,9 @@
 	margin: 0 auto;
 	@include clearfix;
 	padding:1.0em 0 .05em;
+	@media only screen and (max-width: 900px) {
+		text-align: center;
+	}
 }
 header{
   border-top:5px solid $orange;
@@ -11,8 +14,31 @@ header{
 }
 .logo_header{
 	float:left;
+	@media only screen and (max-width: 900px) {
+		float:none;
+	}
 }
 .banner_header{
 	float:right;
 	margin-top:1.5em;
+	display:block;
+	@media only screen and (max-width: 900px) {
+		display: none;
+	}
+}
+.mobile_banner{
+	width: 100%;
+	background-color: $orange;
+	color:#fff;
+	font-size: 1.5em;
+	font-weight: 400;
+	display: none;
+	margin: 0.75em 0;
+	padding:0.5em 0;
+	span{
+		font-weight: 600;
+	}
+	@media only screen and (max-width: 900px) {
+		display: block;
+	}
 }

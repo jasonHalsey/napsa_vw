@@ -104,25 +104,25 @@ Template Name: Index
 				<?php wp_reset_query(); ?>
 			</section> <!-- .videofeed -->
 
-			<section class="videofeed veterinary">
-				<h2 id="veterinary">Veterinary</h2>
+			<section class="videofeed safety">
+				<h2 id="safety">Safety</h2>
 				<?php
-					$veterinary = array( 'post_type' => 'napsavid', 'tax_query' =>
+					$safety = array( 'post_type' => 'napsavid', 'tax_query' =>
                                array(
                                   array(
                                     'taxonomy' => 'tag',
                                     'field'    => 'name',
-                                    'terms' => veterinary,                                    
+                                    'terms' => safety,                                    
                                   ),
                                 ), 
                 );
-					$loop = new WP_Query( $veterinary );
+					$loop = new WP_Query( $safety );
 				?>
 				<?php while ( $loop->have_posts() ) : $loop->the_post();?>
 					<a class="post_block" href="<?php the_permalink(); ?>">
 						<div class="img_hold">
 							<div class="play_arrow"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/play_arrow.svg"></div>
-							<img src="<?php echo get_post_meta( $post->ID, '_cmb2_placholder_image', true ); ?>" class="placeholder" />
+							<img src="<?php echo get_post_meta( $post->ID, '_cmb2_placholder_image', true ); ?>" />
 						</div>
 						<div class="vid_info">
 							<h2><?php the_title() ?></h2>
@@ -133,7 +133,8 @@ Template Name: Index
 
 				<?php wp_reset_query(); ?>
 			</section> <!-- .videofeed -->
-
+			
+			
 			<section class="videofeed sanctuary_management">
 				<h2 id="sanctuary_management">Management</h2>
 				<?php
@@ -164,25 +165,27 @@ Template Name: Index
 				<?php wp_reset_query(); ?>
 			</section> <!-- .videofeed -->
 
-			<section class="videofeed safety">
-				<h2 id="safety">Safety</h2>
+			
+
+			<section class="videofeed veterinary">
+				<h2 id="veterinary">Veterinary</h2>
 				<?php
-					$safety = array( 'post_type' => 'napsavid', 'tax_query' =>
+					$veterinary = array( 'post_type' => 'napsavid', 'tax_query' =>
                                array(
                                   array(
                                     'taxonomy' => 'tag',
                                     'field'    => 'name',
-                                    'terms' => safety,                                    
+                                    'terms' => veterinary,                                    
                                   ),
                                 ), 
                 );
-					$loop = new WP_Query( $safety );
+					$loop = new WP_Query( $veterinary );
 				?>
 				<?php while ( $loop->have_posts() ) : $loop->the_post();?>
 					<a class="post_block" href="<?php the_permalink(); ?>">
 						<div class="img_hold">
 							<div class="play_arrow"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/play_arrow.svg"></div>
-							<img src="<?php echo get_post_meta( $post->ID, '_cmb2_placholder_image', true ); ?>" />
+							<img src="<?php echo get_post_meta( $post->ID, '_cmb2_placholder_image', true ); ?>" class="placeholder" />
 						</div>
 						<div class="vid_info">
 							<h2><?php the_title() ?></h2>

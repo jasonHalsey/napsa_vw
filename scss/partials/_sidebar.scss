@@ -4,15 +4,15 @@
 		color:$orange;
 		font-family: $headerFont;
 		text-transform: uppercase;
-		font-size: 1.3em;
+		font-size: 18px;
 		font-weight: 700;
 		margin: 0 0 0.25em 0;
 	}
-	.widget-content:not(:first-child){
-		h3.widget-title{
-			font-size: 18px;
-		}
-	}
+	// .widget-content:not(:first-child){
+	// 	h3.widget-title{
+	// 		font-size: 18px;
+	// 	}
+	// }
 	.widget-content{
 		margin-bottom: 1.5em;
 	}

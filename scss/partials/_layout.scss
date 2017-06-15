@@ -2,6 +2,7 @@ body{
 	background-color: $white;
 	font-size: 18px;
 	color:#000;
+	line-height:1.2em;
 }
 
 $custom-neat-grid: (
@@ -21,23 +22,33 @@ $custom-neat-grid: (
 body.home{
 	#header_video{
 		width:100%;
-	max-width: 1200px;
-	margin:0 auto 2.0em;
-	display:block;
-	@include clearfix;
+		max-width: 1200px;
+		margin:0 auto 2.0em;
+		display:block;
+		@include clearfix;
 	}
 	.site-main{
 	  @include grid-column(9);
-
+	  @media only screen and (min-width: 1200px) {
+	  	margin-left: 0;
+	  }
+	  @media only screen and (max-width: 700px) {
+	      @include grid-column(12);
+	   }
 
 	}
 	#sidebar_nap{
 	  @include grid-column(3);
-
+	  @media only screen and (max-width: 700px) {
+	      @include grid-column(12);
+	   }
+	    @media only screen and (min-width: 1200px) {
+	  		width:25%;
+	  	}
 	}
 }
 body.single{
 	.site-main{
-	  @include grid-container();
+	   @include grid-column(12);
 	 }
 }
