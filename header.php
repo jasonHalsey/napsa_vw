@@ -26,3 +26,4 @@
     </section>
   </header>
 <body <?php body_class(); ?>>
+    <?php include_once("analyticstracking.php") ?>
