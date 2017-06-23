@@ -183,6 +183,11 @@ function cmb2_napsa_metaboxes( array $meta_boxes ) {
         'type' => 'text_medium',
       ),
       array(
+        'name'    => __( 'PDF Title', 'cmb2' ),
+        'id'      => $prefix . 'pdf_title',
+        'type' => 'text_medium',
+      ),
+      array(
         'name' => __( 'PDF Attachment', 'cmb2' ),
         'desc' => __( 'Upload a PDF', 'cmb2' ),
         'id'   => $prefix . 'pdf_upload',

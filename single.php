@@ -20,7 +20,7 @@ Template Name: single_video
 			<?php echo wpautop(get_post_meta( $post->ID, '_cmb2_short_description', true )); ?>
 			<?php echo do_shortcode(" $chat_code "); ?>
 			<?php if (!empty($pdf_attach)){ ?>
-            <a href="<?php echo $pdf_attach ?>">View PDF Here.</a>
+            <a href="<?php echo $pdf_attach ?>">View <?php echo $pdf_title ?> PDF Here.</a>
           <?php } ?>
 			
 
